@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+html,
+body,
+.container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background: #900;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+}
+header label {
+  font-size: 21px;
+  color: #fff;
+}
+header #return {
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  background: url("../img/fan.png");
+  width: 30px;
+  height: 30px;
+  background-size: 100% auto;
+  display: none;
+}
+header #search {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  background: url("../img/sss.png") no-repeat;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+}
+header #fav {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  background: url("../img/scc.png") no-repeat;
+  background-size: 100% auto;
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+#searchBox {
+  display: none;
+  width: 100%;
+  background: #ccc;
+  padding: 10px 15px;
+}
+#searchBox #searchInput {
+  position: relative;
+  border-radius: 5px;
+  background: #ffffff url("../img/sear.png") no-repeat 10px 10px;
+  width: 90%;
+  height: 35px;
+}
+#searchBox #searchInput P {
+  padding: 8px 0 0 35px;
+}
+#searchBox #searchInput P input {
+  border: none;
+  outline: none;
+}
+#searchBox #searchInput #gosearch {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: url("../img/search.png") no-repeat;
+  background-size: 100% 100%;
+  width: 100px;
+  height: 35px;
+}
+.searchList li {
+  padding: 10px;
+  border-bottom: dashed 1px #333;
+}
+section {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+section > div {
+  background: pink;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  transform: translate3d(100%, 0, 0);
+}
+section > div:nth-child(1) {
+  transform: translate3d(0, 0, 0);
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background: #222;
+  position: relative;
+}
+footer nav {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-flex: 1;
+  padding-top: 3px;
+}
+footer nav a {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+footer .mark {
+  width: 25%;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 2px 8px #fff;
+}
+#home a {
+  display: -webkit-box;
+  display: -moz-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  margin: 10px auto;
+}
+#home a img {
+  width: 290px;
+  height: auto;
+}
+@media screen and (min-width: 680px) {
+  #home a {
+    width: 50%;
+    float: left;
+  }
+  #home a img {
+    width: 290px;
+    height: auto;
+  }
+}
+#iscroll_r a {
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px dashed #000;
+}
+#iscroll_r a dl dt {
+  float: left;
+  padding: 10px 10px;
+}
+#iscroll_r a dl dd {
+  float: left;
+  padding: 30px 30px;
+  color: #333;
+}
